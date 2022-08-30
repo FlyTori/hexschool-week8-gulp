@@ -1,0 +1,393 @@
+---
+title: Artwork
+layout: ./app/layout.ejs
+engine: ejs
+current: artwork
+---
+
+<!-- Artwork intro + pricing -->
+
+<div
+  class="container mt-6 space-y-6 md:mt-10 md:flex md:space-x-6 md:space-y-0"
+>
+  <div class="h-auto w-full md:w-6/12">
+    <img
+      src="assets/images/art21.jpg"
+      alt=""
+      class="aspect-square object-cover md:h-full md:w-full lg:max-h-[546px]"
+    />
+  </div>
+  <div class="w-full border border-black bg-white md:w-6/12">
+    <div class="border-b border-black p-6 md:px-10">
+      <div
+        class="flex flex-row-reverse justify-between md:flex-col lg:flex-row-reverse"
+      >
+        <div class="flex items-center">
+          <img
+            src="assets/images/artist01.jpg"
+            alt=""
+            class="mr-2 h-8 w-8 rounded-full object-cover"
+          />
+          <p class="font-dis1">Michael</p>
+        </div>
+        <h1 class="mt-2 text-5xl font-bold lg:mt-0">兩情相悅</h1>
+      </div>
+      <div class="mt-4 flex items-end justify-between">
+        <div>
+          <p class="text-sm text-neutral-500">最高出價</p>
+          <div class="mt-2 flex items-center">
+            <img
+              src="assets/images/user01.jpg"
+              alt=""
+              class="mr-2 h-8 w-8 rounded-full object-cover"
+            />
+            <p class="font-dis1">
+              <i class="fa-solid fa-arrow-right mr-2"></i>0.044Eth
+            </p>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="block border border-black bg-main py-1 px-10 text-white hover:bg-black"
+          >出價</a
+        >
+      </div>
+    </div>
+    <div class="p-6 md:px-10">
+      <p>3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+      <p class="mt-4">
+        而且其中一隻竟然有梳油頭，不知道是不是有用定型液，他們感情真好，出門還會特別打扮，看著看著不禁思考，我怎麼會變這樣？
+      </p>
+      <p class="mt-4">好羨慕啊，我也要有這樣兩情相悅的另一半。</p>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-6 gap-6 md:columns-2">
+  <div
+    class="card1 mb-6 w-full break-inside-avoid border border-black bg-white"
+  >
+    <div
+      class="flex items-center justify-between border-b border-black p-4 md:p-6"
+    >
+      <h3 class="font-bold">屬性</h3>
+      <div class=""><i class="fa-solid fa-chevron-up"></i></div>
+    </div>
+    <ul class="divide-y p-4 md:px-6">
+      <li class="flex justify-between py-2">
+        <p>品種</p>
+        <p class="text-neutral-500">青藍金剛鸚鵡</p>
+      </li>
+      <li class="flex justify-between py-2">
+        <p>鳥的數量</p>
+        <p class="text-neutral-500">2隻</p>
+      </li>
+      <li class="flex justify-between py-2">
+        <p>是否有花草</p>
+        <p class="text-neutral-500">是</p>
+      </li>
+      <li class="flex justify-between py-2">
+        <p>鳥的顏色</p>
+        <p class="text-neutral-500">藍色</p>
+      </li>
+    </ul>
+  </div>
+
+  <div
+    class="card2 mb-6 w-full break-inside-avoid border border-black bg-white"
+  >
+    <div
+      class="flex items-center justify-between border-b border-black p-4 md:p-6"
+    >
+      <h3 class="font-bold">基本資訊</h3>
+      <div class=""><i class="fa-solid fa-chevron-up"></i></div>
+    </div>
+    <ul class="divide-y p-4 md:px-6">
+      <li class="flex justify-between py-2">
+        <p>擁有者</p>
+        <p class="text-neutral-500">0xa543x…1283</p>
+      </li>
+      <li class="flex justify-between py-2">
+        <p>代幣ID</p>
+        <p class="text-neutral-500">#1234</p>
+      </li>
+      <li class="flex justify-between py-2">
+        <p>合約地址</p>
+        <p class="text-neutral-500">青藍金剛鸚鵡</p>
+      </li>
+    </ul>
+  </div>
+
+  <div
+    class="card3 mb-6 w-full break-inside-avoid border border-black bg-white"
+  >
+    <div
+      class="flex items-center justify-between border-b border-black p-4 md:p-6"
+    >
+      <h3 class="font-bold">出價</h3>
+      <div class=""><i class="fa-solid fa-chevron-up"></i></div>
+    </div>
+    <ul class="p-4 md:px-6">
+      <li class="flex justify-between bg-neutral-100 py-2 px-2 text-sm">
+        <p class="w-6/12">價格</p>
+        <p class="w-6/12">期限</p>
+      </li>
+      <li class="flex justify-between border-b py-2 px-2">
+        <div class="flex w-6/12 items-center">
+          <img
+            src="assets/images/user01.jpg"
+            alt=""
+            class="mr-2 h-8 w-8 rounded-full object-cover"
+          />
+          <i class="fa-solid fa-arrow-right mr-2"></i>
+          <p class="font-dis1">0.044Eth</p>
+        </div>
+        <p class="flex w-6/12 items-center text-neutral-500">3個月後</p>
+      </li>
+      <li class="flex justify-between border-b py-2 px-2">
+        <div class="flex w-6/12 items-center">
+          <img
+            src="assets/images/user02.jpg"
+            alt=""
+            class="mr-2 h-8 w-8 rounded-full object-cover"
+          />
+          <i class="fa-solid fa-arrow-right mr-2"></i>
+          <p class="font-dis1">0.054Eth</p>
+        </div>
+        <p class="flex w-6/12 items-center text-neutral-500">1個月後</p>
+      </li>
+      <li class="flex justify-between border-b py-2 px-2">
+        <div class="flex w-6/12 items-center">
+          <img
+            src="assets/images/user03.jpg"
+            alt=""
+            class="mr-2 h-8 w-8 rounded-full object-cover"
+          />
+          <i class="fa-solid fa-arrow-right mr-2"></i>
+          <p class="font-dis1">0.044Eth</p>
+        </div>
+        <p class="flex w-6/12 items-center text-neutral-500">2週後</p>
+      </li>
+    </ul>
+  </div>
+
+  <div
+    class="card4 mb-6 w-full break-inside-avoid border border-black bg-white"
+  >
+    <div
+      class="flex items-center justify-between border-b border-black p-4 md:p-6"
+    >
+      <h3 class="font-bold">交易歷史</h3>
+      <div class=""><i class="fa-solid fa-chevron-up"></i></div>
+    </div>
+    <ul class="p-4 md:px-6">
+      <li class="flex justify-between bg-neutral-100 py-2 px-2">
+        <p class="w-3/12 lg:w-2/12">事件</p>
+        <p class="w-3/12 lg:w-2/12">價格</p>
+        <p class="w-3/12 lg:w-6/12">從</p>
+        <p class="w-3/12 lg:w-2/12">時間</p>
+      </li>
+
+      <li class="flex justify-between border-b py-2 px-2">
+        <p class="w-3/12 lg:w-2/12">上架</p>
+        <p class="w-3/12 lg:w-2/12">2nb</p>
+        <div class="flex w-3/12 items-center lg:w-6/12">
+          <img
+            src="assets/images/user03.jpg"
+            alt=""
+            class="mr-2 h-6 w-6 rounded-full object-cover"
+          />
+          <p class="hidden font-dis1 lg:block">Antony WU</p>
+        </div>
+        <p class="w-3/12 text-neutral-500 lg:w-2/12">14小時前</p>
+      </li>
+
+      <li class="flex justify-between border-b py-2 px-2">
+        <p class="w-3/12 lg:w-2/12">出價</p>
+        <p class="w-3/12 lg:w-2/12">2nb</p>
+        <div class="flex w-3/12 items-center lg:w-6/12">
+          <img
+            src="assets/images/user02.jpg"
+            alt=""
+            class="mr-2 h-6 w-6 rounded-full object-cover"
+          />
+          <p class="hidden font-dis1 lg:block">Antony WU</p>
+        </div>
+        <p class="w-3/12 text-neutral-500 lg:w-2/12">2天前</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <!-- header -->
+
+  <div
+    class="mt-10 flex items-end justify-between border-b border-black md:mt-20"
+  >
+    <div class="flex items-end">
+      <h2 class="pb-2 font-dis1 text-5xl font-bold">Other</h2>
+      <h3 class="ml-4 hidden pb-2 text-[20px] font-semibold sm:block">
+        其餘作品
+      </h3>
+    </div>
+    <a
+      href="#"
+      class="button group relative px-12 py-2 font-dis1 text-lg hover:bg-main hover:text-white"
+    >
+      <p>more</p>
+      <div
+        class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent group-hover:border-b-black group-hover:border-r-black"
+      ></div>
+    </a>
+  </div>
+
+  <!-- 4 columns -->
+
+  <div class="mt-6 grid grid-cols-2 gap-6 md:mt-12 lg:grid-cols-4">
+    <div class="card1 border-black pb-4 sm:mb-6 sm:border-b">
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art22.jpg"
+            alt=""
+            class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">群聚的小鳥們</h4>
+    </div>
+    <div class="card2 border-black pb-4 sm:mb-6 sm:border-b">
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art27.jpg"
+            alt=""
+            class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">我真的受傷了</h4>
+    </div>
+    <div class="card3 hidden border-black pb-4 sm:mb-6 sm:block sm:border-b">
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art20.jpg"
+            alt=""
+            class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">這兩隻也太像企鵝了吧</h4>
+    </div>
+    <div class="card4 hidden border-black pb-4 sm:mb-6 sm:block sm:border-b">
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art25.jpg"
+            alt=""
+            class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">群聚囉～小鳥</h4>
+    </div>
+  </div>
+
+  <!-- pagination -->
+  <ul class="mt-6 flex justify-center">
+    <li class="mr-2 h-2 w-2 bg-black"></li>
+    <li class="mr-2 h-2 w-4 bg-main"></li>
+    <li class="mr-2 h-2 w-2 bg-black"></li>
+    <li class="h-2 w-2 bg-black"></li>
+  </ul>
+</div>

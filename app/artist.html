@@ -1,0 +1,267 @@
+---
+title: Artist
+layout: ./app/layout.ejs
+engine: ejs
+current: artist
+---
+
+<!-- Artist intro + pricing -->
+
+<div class="container lg:flex lg:space-x-6">
+  <div class="mt-6 border border-black md:mt-10 lg:flex lg:w-9/12">
+    <div class="bg-yellow-200 lg:w-5/12">
+      <img
+        src="assets/images/artist01.jpg"
+        alt=""
+        class="h-full object-cover"
+      />
+    </div>
+    <div class="py-6 px-4 md:px-6 lg:w-7/12">
+      <div class="flex items-center justify-between">
+        <h1 class="font-dis1 text-5xl">Michael</h1>
+        <ul class="flex">
+          <li>
+            <a href="#" class="p-1 hover:text-main"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="p-1 hover:text-main"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="p-1 hover:text-main"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="p-1 hover:text-main"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <h3 class="mt-2 font-dis1 md:mt-4">0x3ya666…88ef</h3>
+      <p class="mt-6">
+        Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​
+      </p>
+    </div>
+  </div>
+  <ul
+    class="mt-4 flex flex-col flex-wrap justify-between border border-b-0 border-black md:mt-10 md:flex-row lg:w-3/12 lg:flex-col"
+  >
+    <li
+      class="flex grow items-center justify-between border-b border-black px-6 py-4 md:w-6/12 md:border-r lg:w-full lg:border-r-0 lg:py-0"
+    >
+      <div class="font-semibold">販售中</div>
+      <div class="font-dis1 text-3xl">168</div>
+    </li>
+    <li
+      class="flex grow items-center justify-between border-b border-black px-6 py-4 md:w-6/12 lg:w-full lg:py-0"
+    >
+      <div class="font-semibold">地板價格</div>
+      <div class="font-dis1 text-3xl">
+        0.6 <span class="text-2xl">ETH</span>
+      </div>
+    </li>
+    <li
+      class="flex grow items-center justify-between border-b border-black px-6 py-4 md:w-6/12 md:border-r lg:w-full lg:border-r-0 lg:py-0"
+    >
+      <div class="font-semibold">7 日成交</div>
+      <div class="font-dis1 text-3xl">
+        8.8 <span class="text-2xl">ETH</span>
+      </div>
+    </li>
+    <li
+      class="flex grow items-center justify-between border-b border-black px-6 py-4 md:w-6/12 lg:w-full lg:py-0"
+    >
+      <div class="font-semibold">30 日成交</div>
+      <div class="font-dis1 text-3xl">
+        23.1 <span class="text-2xl">ETH</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!-- tabs -->
+
+<ul class="container mt-10 flex border-black md:mt-20">
+  <li class="border border-b-0 border-black">
+    <a
+      href="artist.html"
+      class="block py-4 px-4 font-dis1 text-3xl hover:text-main md:px-12 md:text-5xl"
+      >Art Works<span class="z-10 hidden text-[20px] sm:ml-4 sm:inline-block"
+        >系列作品</span
+      ></a
+    >
+  </li>
+  <li class="border-b border-black">
+    <a
+      href="collection.html"
+      class="block py-4 px-4 font-dis1 text-3xl hover:text-main md:px-12 md:text-5xl"
+      >Collection<span class="z-10 hidden text-[20px] sm:ml-4 sm:inline-block"
+        >收藏品</span
+      ></a
+    >
+  </li>
+  <li class="grow border-b border-black"></li>
+</ul>
+
+<!-- section 1 -->
+
+<div
+  class="container relative mt-6 flex border border-black bg-white px-4 py-8 md:mt-10 md:pb-[150px] lg:pb-[200px] xl:pb-[260px]"
+>
+  <div
+    class="absolute top-0 left-0 h-0 w-0 border-8 border-black border-b-transparent border-l-black border-r-transparent border-t-black"
+  ></div>
+  <div
+    class="absolute top-0 right-0 h-0 w-0 border-8 border-black border-b-transparent border-l-transparent border-r-black border-t-black"
+  ></div>
+  <div class="relative mx-auto lg:w-10/12">
+    <div class="flex items-center justify-between md:space-x-6">
+      <div>
+        <h3 class="text-2xl font-bold">追求者送我的花</h3>
+        <p class="mt-4 md:mt-6">
+          我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。
+        </p>
+      </div>
+      <a
+        href="#"
+        class="button group relative mb-1 hidden self-end border border-black px-12 py-2 font-dis1 text-lg hover:bg-main hover:text-white md:block"
+      >
+        <span>more</span>
+        <div
+          class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent group-hover:border-b-black group-hover:border-r-black"
+        ></div>
+      </a>
+    </div>
+    <ul class="mt-10 flex md:absolute md:mt-12 md:w-full md:space-x-6">
+      <li class="w-full">
+        <a href="#">
+          <img
+            src="assets/images/flower01.jpg"
+            alt=""
+            class="aspect-square border-[10px] border-black object-cover"
+          />
+        </a>
+      </li>
+      <li class="hidden w-full md:block">
+        <a href="#">
+          <img
+            src="assets/images/flower02.jpeg"
+            alt=""
+            class="aspect-square border-[10px] border-black object-cover"
+          />
+        </a>
+      </li>
+      <li class="hidden w-full md:block">
+        <a href="#">
+          <img
+            src="assets/images/flower03.jpeg"
+            alt=""
+            class="aspect-square border-[10px] border-black object-cover"
+          />
+        </a>
+      </li>
+      <li class="hidden w-full md:block">
+        <a href="#">
+          <img
+            src="assets/images/flower04.jpeg"
+            alt=""
+            class="aspect-square border-[10px] border-black object-cover"
+          />
+        </a>
+      </li>
+    </ul>
+    <a
+      href="#"
+      class="button relative mx-auto mt-4 block w-[132px] border border-black px-12 py-1 font-dis1 text-lg md:hidden"
+    >
+      <span>more</span>
+      <div
+        class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+      ></div>
+    </a>
+  </div>
+</div>
+
+<!-- section 2 -->
+
+<div
+  class="container relative mt-6 mb-12 flex border border-black bg-white px-4 py-8 md:mt-28 md:mb-32 md:pb-[150px] lg:pb-[200px] xl:pb-[260px]"
+>
+  <div
+    class="absolute top-0 left-0 h-0 w-0 border-8 border-black border-b-transparent border-l-black border-r-transparent border-t-black"
+  ></div>
+  <div
+    class="absolute top-0 right-0 h-0 w-0 border-8 border-black border-b-transparent border-l-transparent border-r-black border-t-black"
+  ></div>
+  <div class="relative mx-auto lg:w-10/12">
+    <div class="flex items-center justify-between md:space-x-6">
+      <div>
+        <h3 class="text-2xl font-bold">我家窗前的鳥</h3>
+        <p class="mt-4 md:mt-6">
+          家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
+        </p>
+      </div>
+      <a
+        href="artwork.html"
+        class="button group relative mb-1 hidden self-end border border-black px-12 py-2 font-dis1 text-lg hover:bg-main hover:text-white md:block"
+      >
+        <span>more</span>
+        <div
+          class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent group-hover:border-b-black group-hover:border-r-black"
+        ></div>
+      </a>
+    </div>
+    <ul class="mt-10 flex md:absolute md:mt-12 md:w-full md:space-x-6">
+      <li class="w-full">
+        <a href="#">
+          <img
+            src="assets/images/art27.jpg"
+            alt=""
+            class="aspect-square border-[10px] border-black object-cover"
+          />
+        </a>
+      </li>
+      <li class="hidden w-full md:block">
+        <a href="#">
+          <img
+            src="assets/images/art20.jpg"
+            alt=""
+            class="aspect-square border-[10px] border-black object-cover"
+          />
+        </a>
+      </li>
+      <li class="hidden w-full md:block">
+        <a href="#">
+          <img
+            src="assets/images/art21.jpg"
+            alt=""
+            class="aspect-square border-[10px] border-black object-cover"
+          />
+        </a>
+      </li>
+      <li class="hidden w-full md:block">
+        <a href="#">
+          <img
+            src="assets/images/art22.jpg"
+            alt=""
+            class="aspect-square border-[10px] border-black object-cover"
+          />
+        </a>
+      </li>
+    </ul>
+    <a
+      href="#"
+      class="button relative mx-auto mt-4 block w-[132px] border border-black px-12 py-1 font-dis1 text-lg md:hidden"
+    >
+      <span>more</span>
+      <div
+        class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+      ></div>
+    </a>
+  </div>
+</div>
