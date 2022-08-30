@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Collections</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/style/font-awesome.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Paytone+One&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body class="bg-neutral-100">
+    <!-- navigation -->
+    <nav class="border-b border-black">
+      <div class="container flex justify-between">
+        <a href="index.html" class="logo block py-4 lg:py-8"
+          ><img src="assets/images/logo.svg" alt=""
+        /></a>
+        <div class="flex">
+          <a
+            href="#"
+            class="search flex w-auto items-center justify-between border-black px-4 sm:border-l lg:w-[432px] lg:px-10"
+          >
+            <p class="hidden pr-2 text-neutral-500 md:block">
+              搜索作品名稱、藝術家名稱
+            </p>
+            <i
+              class="fa-solid fa-magnifying-glass text-xl text-black md:text-lg"
+            ></i>
+          </a>
+          <ul class="hidden items-stretch sm:flex">
+            <li>
+              <a
+                href="collections.html"
+                class="flex h-full items-center whitespace-nowrap border-l border-black px-4 lg:px-10"
+                >探索</a
+              >
+            </li>
+            <li>
+              <a
+                href="ranking.html"
+                class="flex h-full items-center whitespace-nowrap border-l border-black px-4 lg:px-10"
+                >市值</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex h-full items-center whitespace-nowrap border-l border-black px-4 lg:px-10"
+                ><i class="fa-solid fa-wallet text-2xl"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="flex items-center border-black px-6 text-2xl sm:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+<div class="container mt-8 flex items-start sm:space-x-6 md:mt-10">
+  <div
+    class="filters hidden border-t border-l border-r border-black bg-white sm:block md:w-4/12 lg:w-3/12"
+  >
+    <div class="section1 border-b border-black p-6">
+      <div class="header items-between mb-4 flex justify-between">
+        <h4 class="font-semibold">網路</h4>
+        <i class="fa-solid fa-chevron-up mt-1 flex items-center"></i>
+      </div>
+      <div class="mt-2 flex items-center justify-between">
+        <p>以太坊</p>
+        <input
+          type="checkbox"
+          class="text-black focus:ring-1 focus:ring-black"
+        />
+      </div>
+      <div></div>
+      <div class="mt-2 flex items-center justify-between">
+        <p>BNB 智能鏈</p>
+        <input
+          type="checkbox"
+          class="text-black focus:ring-1 focus:ring-black"
+          checked
+        />
+      </div>
+    </div>
+
+    <div class="section2 border-b border-black p-6">
+      <div class="header items-between mb-4 flex justify-between">
+        <h4 class="font-semibold">狀態</h4>
+        <i class="fa-solid fa-chevron-up mt-1 flex items-center"></i>
+      </div>
+      <div class="mt-2 flex items-center justify-between">
+        <p>僅展示</p>
+        <input
+          type="checkbox"
+          class="text-black focus:ring-1 focus:ring-black"
+        />
+      </div>
+      <div></div>
+      <div class="mt-2 flex items-center justify-between">
+        <p>拍賣中</p>
+        <input
+          type="checkbox"
+          class="text-black focus:ring-1 focus:ring-black"
+          checked
+        />
+      </div>
+    </div>
+
+    <div class="section3 border-b border-black p-6">
+      <div class="header items-between mb-4 flex justify-between">
+        <h4 class="font-semibold">網路</h4>
+        <i class="fa-solid fa-chevron-up mt-1 flex items-center"></i>
+      </div>
+      <div class="flex items-center">
+        <select
+          id="type"
+          class="mr-2 h-10 w-[30%] px-2 text-sm focus:border-black focus:ring-0"
+        >
+          <option selected>ETH</option>
+          <option value="US">BTC</option>
+        </select>
+        <input
+          type="text"
+          class="mr-1 h-10 w-[30%] px-2 text-sm focus:border-black focus:ring-0"
+        />
+        <div class="mr-1 h-[1px] w-4 grow bg-black"></div>
+        <input
+          type="text"
+          class="h-10 w-[30%] px-2 text-sm focus:border-black focus:ring-0"
+        />
+      </div>
+    </div>
+
+    <div class="section4 border-b border-black p-6">
+      <h4 class="font-semibold text-neutral-500">屬性</h4>
+      <!-- 4-1 -->
+      <div class="mt-6">
+        <div class="header items-between mt-6 flex justify-between first:mt-0">
+          <h4 class="font-semibold">品種</h4>
+          <i class="fa-solid fa-chevron-up mt-1 flex items-center"></i>
+        </div>
+        <div>
+          <div class="mt-2 flex items-center justify-between first:mt-4">
+            <p>八哥</p>
+            <input
+              type="checkbox"
+              class="text-black focus:ring-1 focus:ring-black"
+            />
+          </div>
+          <div></div>
+          <div class="mt-2 flex items-center justify-between first:mt-4">
+            <p>虎皮鸚鵡</p>
+            <input
+              type="checkbox"
+              class="text-black focus:ring-1 focus:ring-black"
+              checked
+            />
+          </div>
+          <div class="mt-2 flex items-center justify-between first:mt-4">
+            <p>太平鳥</p>
+            <input
+              type="checkbox"
+              class="text-black focus:ring-1 focus:ring-black"
+            />
+          </div>
+          <div class="mt-2 flex items-center justify-between first:mt-4">
+            <p>畫眉鳥</p>
+            <input
+              type="checkbox"
+              class="text-black focus:ring-1 focus:ring-black"
+            />
+          </div>
+        </div>
+
+        <!-- 4-2 -->
+        <div class="header items-between mt-6 flex justify-between first:mt-0">
+          <h4 class="font-semibold">鳥的數量</h4>
+          <i class="fa-solid fa-chevron-down mt-1 flex items-center"></i>
+        </div>
+        <!-- 4-3 -->
+        <div class="header items-between mt-6 flex justify-between first:mt-0">
+          <h4 class="font-semibold">是否有花草</h4>
+          <i class="fa-solid fa-chevron-down mt-1 flex items-center"></i>
+        </div>
+        <!-- 4-4 -->
+        <div class="header items-between mt-6 flex justify-between first:mt-0">
+          <h4 class="font-semibold">鳥的顏色</h4>
+          <i class="fa-solid fa-chevron-down mt-1 flex items-center"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main md:w-8/12 lg:w-9/12">
+    <div class="header items-end lg:flex lg:space-x-6">
+      <div class="title">
+        <div class="flex items-center">
+          <img
+            src="assets/images/artist01.jpg"
+            alt=""
+            class="mr-4 h-8 w-8 rounded-full object-cover"
+          />
+          <p class="font-dis1">Michael</p>
+        </div>
+        <h1 class="mt-1 text-[32px] font-bold">我家外面的鳥</h1>
+        <p class="mt-2">
+          家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
+        </p>
+      </div>
+
+      <ul
+        class="mt-4 flex divide-x divide-black whitespace-nowrap border border-black bg-white text-center lg:mt-0 lg:min-w-[360px] xl:min-w-[400px]"
+      >
+        <li class="w-3/12 py-4">
+          <h4>項目</h4>
+          <p class="font-dis1 text-xl">6.4 k</p>
+        </li>
+        <li class="relative w-3/12 py-4">
+          <div class="absolute top-[25%] -left-0.5 h-10 w-1 bg-white"></div>
+          <h4>擁有者</h4>
+          <p class="font-dis1 text-xl">2.5 k</p>
+        </li>
+        <li class="relative w-3/12 py-4">
+          <div class="absolute top-[25%] -left-0.5 h-10 w-1 bg-white"></div>
+          <h4>底價</h4>
+          <p class="font-dis1 text-xl">
+            <i class="fa-brands fa-ethereum mr-1"></i>1.38 k
+          </p>
+        </li>
+        <li class="relative w-3/12 py-4">
+          <div class="absolute top-[25%] -left-0.5 h-10 w-1 bg-white"></div>
+          <h4>項目</h4>
+          <p class="font-dis1 text-xl">2.8 k</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- masonry -->
+    <ul class="mt-6 columns-2 md:mt-12 lg:columns-3">
+      <li class="card1 mb-12 break-inside-avoid border-b border-black pb-4">
+        <a href="#" class="group block bg-slate-900">
+          <div class="relative w-full">
+            <img
+              src="assets/images/art20.jpg"
+              alt=""
+              class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+            />
+            <div
+              class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+            >
+              <div
+                class="flex h-full flex-col justify-between border border-white p-4"
+              >
+                <div class="text-white">
+                  <p>3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                  <p class="font-dis1">
+                    <i class="fa-brands fa-ethereum mr-2"></i>300
+                  </p>
+                </div>
+                <div
+                  class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+                >
+                  <span>more</span>
+                  <div
+                    class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <h4 class="mt-4 font-semibold">這兩隻也太像企鵝了吧</h4>
+      </li>
+
+      <li
+        class="card2 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+      >
+        <a href="#" class="group block bg-slate-900">
+          <div class="relative w-full">
+            <img
+              src="assets/images/art23.jpg"
+              alt=""
+              class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+            />
+            <div
+              class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+            >
+              <div
+                class="flex h-full flex-col justify-between border border-white p-4"
+              >
+                <div class="text-white">
+                  <p>3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                  <p class="font-dis1">
+                    <i class="fa-brands fa-ethereum mr-2"></i>300
+                  </p>
+                </div>
+                <div
+                  class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+                >
+                  <span>more</span>
+                  <div
+                    class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <h4 class="mt-4 font-semibold">與你分享的快樂勝過獨自擁有</h4>
+      </li>
+
+      <li
+        class="card3 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+      >
+        <a href="#" class="group block bg-slate-900">
+          <div class="relative w-full">
+            <img
+              src="assets/images/art21.jpg"
+              alt=""
+              class="aspect-[3/4] border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+            />
+            <div
+              class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+            >
+              <div
+                class="flex h-full flex-col justify-between border border-white p-4"
+              >
+                <div class="text-white">
+                  <p>3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                  <p class="font-dis1">
+                    <i class="fa-brands fa-ethereum mr-2"></i>300
+                  </p>
+                </div>
+                <div
+                  class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+                >
+                  <span>more</span>
+                  <div
+                    class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <h4 class="mt-4 font-semibold">兩情相悅</h4>
+      </li>
+
+      <li
+        class="card4 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+      >
+        <a href="#" class="group block bg-slate-900">
+          <div class="relative w-full">
+            <img
+              src="assets/images/art24.jpg"
+              alt=""
+              class="aspect-auto border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+            />
+            <div
+              class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+            >
+              <div
+                class="flex h-full flex-col justify-between border border-white p-4"
+              >
+                <div class="text-white">
+                  <p>3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                  <p class="font-dis1">
+                    <i class="fa-brands fa-ethereum mr-2"></i>300
+                  </p>
+                </div>
+                <div
+                  class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+                >
+                  <span>more</span>
+                  <div
+                    class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <h4 class="mt-4 font-semibold">會唱metal的鳥</h4>
+      </li>
+
+      <li
+        class="card5 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+      >
+        <a href="#" class="group block bg-slate-900">
+          <div class="relative w-full">
+            <img
+              src="assets/images/art22.jpg"
+              alt=""
+              class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+            />
+            <div
+              class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+            >
+              <div
+                class="flex h-full flex-col justify-between border border-white p-4"
+              >
+                <div class="text-white">
+                  <p>3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                  <p class="font-dis1">
+                    <i class="fa-brands fa-ethereum mr-2"></i>300
+                  </p>
+                </div>
+                <div
+                  class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+                >
+                  <span>more</span>
+                  <div
+                    class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <h4 class="mt-4 font-semibold">群聚的小鳥們</h4>
+      </li>
+
+      <li
+        class="card6 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+      >
+        <a href="#" class="group block bg-slate-900">
+          <div class="relative w-full">
+            <img
+              src="assets/images/art25.jpg"
+              alt=""
+              class="aspect-[3/4] border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+            />
+            <div
+              class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+            >
+              <div
+                class="flex h-full flex-col justify-between border border-white p-4"
+              >
+                <div class="text-white">
+                  <p>3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                  <p class="font-dis1">
+                    <i class="fa-brands fa-ethereum mr-2"></i>300
+                  </p>
+                </div>
+                <div
+                  class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+                >
+                  <span>more</span>
+                  <div
+                    class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <h4 class="mt-4 font-semibold">一大一小兩個恰恰好</h4>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="mt-20 h-[1px] bg-black"></div>
+    <div class="mt-2 h-1 bg-black"></div>
+
+    <footer class="container py-6 text-center">
+      © ART NFT. All Rights Reserved
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+    <!-- Masonry js -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  </body>
+</html>

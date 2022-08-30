@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>首頁</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/style/font-awesome.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Paytone+One&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body class="bg-neutral-100">
+    <!-- navigation -->
+    <nav class="border-b border-black">
+      <div class="container flex justify-between">
+        <a href="index.html" class="logo block py-4 lg:py-8"
+          ><img src="assets/images/logo.svg" alt=""
+        /></a>
+        <div class="flex">
+          <a
+            href="#"
+            class="search flex w-auto items-center justify-between border-black px-4 sm:border-l lg:w-[432px] lg:px-10"
+          >
+            <p class="hidden pr-2 text-neutral-500 md:block">
+              搜索作品名稱、藝術家名稱
+            </p>
+            <i
+              class="fa-solid fa-magnifying-glass text-xl text-black md:text-lg"
+            ></i>
+          </a>
+          <ul class="hidden items-stretch sm:flex">
+            <li>
+              <a
+                href="collections.html"
+                class="flex h-full items-center whitespace-nowrap border-l border-black px-4 lg:px-10"
+                >探索</a
+              >
+            </li>
+            <li>
+              <a
+                href="ranking.html"
+                class="flex h-full items-center whitespace-nowrap border-l border-black px-4 lg:px-10"
+                >市值</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex h-full items-center whitespace-nowrap border-l border-black px-4 lg:px-10"
+                ><i class="fa-solid fa-wallet text-2xl"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="flex items-center border-black px-6 text-2xl sm:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+<!-- Article 文章區塊 -->
+<div class="article container">
+  <div
+    class="flex flex-col flex-wrap md:mt-10 md:flex-row md:border md:border-black"
+  >
+    <article
+      class="md:w-12/12 flex flex-col flex-wrap md:flex-row md:border-b md:border-b-black"
+    >
+      <div class="flex md:w-8/12">
+        <div class="hidden w-[100px] bg-black text-white md:block">
+          <p class="-m-4 rotate-90 py-20 font-dis1 text-5xl">Recommend</p>
+          <p class="mt-20 flex justify-center pr-2">
+            推<br />薦<br />系<br />列
+          </p>
+        </div>
+        <div>
+          <img
+            src="assets/images/art01.jpg"
+            alt=""
+            class="block h-full object-cover"
+          />
+        </div>
+      </div>
+      <div
+        class="mx-3 flex flex-col justify-between py-8 md:mx-0 md:w-4/12 md:px-6 md:pt-20 md:pb-6"
+      >
+        <div>
+          <h4 class="font-dis1 text-lg">Kemus Wu</h4>
+          <h1 class="mt-2 text-2xl font-bold md:text-5xl">瞳孔:流動的脈絡</h1>
+          <p class="mt-6">
+            眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。
+          </p>
+        </div>
+        <a
+          href="#"
+          class="button group relative self-end border border-black px-12 py-2 font-dis1 text-lg hover:bg-main hover:text-white"
+        >
+          <span>more</span>
+          <div
+            class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent group-hover:border-b-black group-hover:border-r-black"
+          ></div>
+        </a>
+      </div>
+    </article>
+    <article
+      class="md:w-12/12 flex flex-col flex-wrap md:flex-row-reverse md:border-b md:border-black lg:w-6/12 lg:border-r lg:border-black"
+    >
+      <div class="flex md:w-6/12">
+        <img
+          src="assets/images/art02.jpg"
+          alt=""
+          class="aspect-square object-cover"
+        />
+      </div>
+      <div
+        class="mx-3 flex flex-col justify-between py-8 md:mx-0 md:w-6/12 md:px-6 md:pt-12 md:pb-6"
+      >
+        <div>
+          <h4 class="font-dis1 text-lg">Joanne</h4>
+          <h3 class="mt-2 text-2xl font-bold md:text-3xl">海洋波度</h3>
+          <p class="mt-6">
+            海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。
+          </p>
+        </div>
+        <a
+          href="#"
+          class="button group relative self-end border border-black px-12 py-2 font-dis1 text-lg hover:bg-main hover:text-white"
+        >
+          <span>more</span>
+          <div
+            class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent group-hover:border-b-black group-hover:border-r-black"
+          ></div>
+        </a>
+      </div>
+    </article>
+    <article
+      class="md:w-12/12 flex flex-col flex-wrap md:flex-row lg:w-6/12 lg:flex-row-reverse"
+    >
+      <div class="flex md:w-6/12">
+        <img
+          src="assets/images/art21.jpg"
+          alt=""
+          class="aspect-square object-cover text-xl"
+        />
+      </div>
+      <div
+        class="mx-3 flex flex-col justify-between py-8 md:mx-0 md:w-6/12 md:px-6 md:pt-12 md:pb-6"
+      >
+        <div>
+          <h4 class="font-dis1 text-lg">Michael</h4>
+          <h3 class="mt-2 text-2xl font-bold md:text-3xl">我家窗前的鳥</h3>
+          <p class="mt-6">
+            家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
+          </p>
+        </div>
+        <a
+          href="#"
+          class="button group relative self-end border border-black px-12 py-2 font-dis1 text-lg hover:bg-main hover:text-white"
+        >
+          <span>more</span>
+          <div
+            class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent group-hover:border-b-black group-hover:border-r-black"
+          ></div>
+        </a>
+      </div>
+    </article>
+  </div>
+</div>
+
+<!-- Ranking 排名區塊 -->
+
+<div class="ranking container mt-10 md:mt-24">
+  <div class="flex items-end justify-between border-b border-black">
+    <div class="flex items-end">
+      <h2 class="pb-2 font-dis1 text-5xl font-bold">Ranking</h2>
+      <h3 class="ml-4 hidden pb-2 text-[20px] font-semibold sm:block">
+        市價排行榜
+      </h3>
+    </div>
+    <a
+      href="#"
+      class="button group relative px-12 py-2 font-dis1 text-lg hover:bg-main hover:text-white"
+    >
+      <p>more</p>
+      <div
+        class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent group-hover:border-b-black group-hover:border-r-black"
+      ></div>
+    </a>
+  </div>
+
+  <ul class="mt-6 md:mt-12 md:grid md:grid-cols-3 md:gap-6">
+    <li class="relative flex border border-black md:flex-col">
+      <div
+        class="z-10 flex w-12 items-center px-4 font-dis2 text-2xl md:absolute md:flex md:h-12 md:justify-center md:border-b md:border-r md:border-black md:bg-white"
+      >
+        1
+      </div>
+      <a
+        href="#"
+        class="group relative block w-24 border-x border-black md:w-full md:border-none md:hover:bg-slate-900"
+      >
+        <div
+          class="absolute bottom-0 right-0 z-10 hidden bg-main px-12 py-1 font-dis1 text-lg text-white group-hover:block"
+        >
+          <p>more</p>
+          <div
+            class="absolute right-0 bottom-0 h-0 w-0 border-8 border-t-transparent border-l-transparent border-b-black border-r-black"
+          ></div>
+        </div>
+        <img
+          src="assets/images/art04.jpg"
+          alt="#"
+          class="aspect-square object-cover group-hover:opacity-50"
+        />
+      </a>
+      <div class="flex grow flex-col md:border-t md:border-black">
+        <h4
+          class="flex grow items-center border-b border-black px-2 font-semibold md:py-4"
+        >
+          散步遇到的女人
+        </h4>
+        <div class="flex items-center justify-between py-2 px-2">
+          <p class="font-dis1">Zoe Jiang</p>
+          <p class="font-dis1"><i class="fa-brands fa-ethereum mr-2"></i>300</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="relative mt-4 flex border border-black md:mt-0 md:flex-col">
+      <div
+        class="z-10 flex w-12 items-center px-4 font-dis2 text-2xl md:absolute md:flex md:h-12 md:justify-center md:border-b md:border-r md:border-black md:bg-white"
+      >
+        2
+      </div>
+      <a
+        href="#"
+        class="group relative block w-24 border-x border-black md:w-full md:border-none md:hover:bg-slate-900"
+      >
+        <div
+          class="absolute bottom-0 right-0 z-10 hidden bg-main px-12 py-1 font-dis1 text-lg text-white group-hover:block"
+        >
+          <p>more</p>
+          <div
+            class="absolute right-0 bottom-0 h-0 w-0 border-8 border-t-transparent border-l-transparent border-b-black border-r-black"
+          ></div>
+        </div>
+        <img
+          src="assets/images/art05.jpg"
+          alt="#"
+          class="aspect-square object-cover group-hover:opacity-50"
+        />
+      </a>
+      <div class="flex grow flex-col md:border-t md:border-black">
+        <h4
+          class="flex grow items-center border-b border-black px-2 font-semibold md:py-4"
+        >
+          爆炸頭的母親
+        </h4>
+        <div class="flex items-center justify-between py-2 px-2">
+          <p class="font-dis1">Yui</p>
+          <p class="font-dis1"><i class="fa-brands fa-ethereum mr-2"></i>300</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="relative mt-4 flex border border-black md:mt-0 md:flex-col">
+      <div
+        class="z-10 flex w-12 items-center px-4 font-dis2 text-2xl md:absolute md:flex md:h-12 md:w-12 md:justify-center md:border-b md:border-r md:border-black md:bg-white"
+      >
+        3
+      </div>
+      <a
+        href="#"
+        class="group relative block w-24 border-x border-black md:w-full md:border-none md:hover:bg-slate-900"
+      >
+        <div
+          class="absolute bottom-0 right-0 z-10 hidden bg-main px-12 py-1 font-dis1 text-lg text-white group-hover:block"
+        >
+          <p>more</p>
+          <div
+            class="absolute right-0 bottom-0 h-0 w-0 border-8 border-t-transparent border-l-transparent border-b-black border-r-black"
+          ></div>
+        </div>
+        <img
+          src="assets/images/art06.jpg"
+          alt="#"
+          class="aspect-square object-cover group-hover:opacity-50"
+        />
+      </a>
+      <div class="flex grow flex-col md:border-t md:border-black">
+        <h4
+          class="flex grow items-center border-b border-black px-2 font-semibold md:py-4"
+        >
+          夏天的時候
+        </h4>
+        <div class="flex items-center justify-between py-2 px-2">
+          <p class="font-dis1">Bug Lin</p>
+          <p class="font-dis1"><i class="fa-brands fa-ethereum mr-2"></i>300</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="mt-4 border border-black md:mt-0">
+      <a href="" class="group flex">
+        <div class="flex w-12 items-center justify-center font-dis2 text-2xl">
+          4
+        </div>
+        <div
+          class="relative block w-24 border-x border-black bg-black md:border-none"
+        >
+          <img
+            src="assets/images/art13.jpg"
+            alt="#"
+            class="aspect-square border-black object-cover group-hover:opacity-30 md:border-x"
+          />
+          <div
+            class="absolute top-0 left-0 hidden h-full w-full items-center justify-center font-dis1 text-lg text-white group-hover:flex"
+          >
+            more
+          </div>
+        </div>
+        <div class="flex grow flex-col">
+          <h4
+            class="flex grow items-center border-b border-black px-2 font-semibold"
+          >
+            追求者送我的花
+          </h4>
+          <div class="flex items-center justify-between py-2 px-2">
+            <p class="font-dis1">Michael</p>
+            <p class="font-dis1">
+              <i class="fa-brands fa-ethereum mr-2"></i>300
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li class="mt-4 border border-black md:mt-0">
+      <a href="" class="group flex">
+        <div class="flex w-12 items-center justify-center font-dis2 text-2xl">
+          5
+        </div>
+        <div
+          class="relative block w-24 border-x border-black bg-black md:border-none"
+        >
+          <img
+            src="assets/images/art07.jpg"
+            alt="#"
+            class="aspect-square border-black object-cover group-hover:opacity-30 md:border-x"
+          />
+          <div
+            class="absolute top-0 left-0 hidden h-full w-full items-center justify-center font-dis1 text-lg text-white group-hover:flex"
+          >
+            more
+          </div>
+        </div>
+        <div class="flex grow flex-col">
+          <h4
+            class="flex grow items-center border-b border-black px-2 font-semibold"
+          >
+            今天釣到的魚
+          </h4>
+          <div class="flex items-center justify-between py-2 px-2">
+            <p class="font-dis1">Wei JJ</p>
+            <p class="font-dis1">
+              <i class="fa-brands fa-ethereum mr-2"></i>300
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li class="mt-4 border border-black md:mt-0">
+      <a href="" class="group flex">
+        <div class="flex w-12 items-center justify-center font-dis2 text-2xl">
+          6
+        </div>
+        <div
+          class="relative block w-24 border-x border-black bg-black md:border-none"
+        >
+          <img
+            src="assets/images/art02.jpg"
+            alt="#"
+            class="aspect-square border-black object-cover group-hover:opacity-30 md:border-x"
+          />
+          <div
+            class="absolute top-0 left-0 hidden h-full w-full items-center justify-center font-dis1 text-lg text-white group-hover:flex"
+          >
+            more
+          </div>
+        </div>
+        <div class="flex grow flex-col">
+          <h4
+            class="flex grow items-center border-b border-black px-2 font-semibold"
+          >
+            人生中的貓咪們
+          </h4>
+          <div class="flex items-center justify-between py-2 px-2">
+            <p class="font-dis1">Even Lai</p>
+            <p class="font-dis1">
+              <i class="fa-brands fa-ethereum mr-2"></i>300
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Artist 熱門藝術家 -->
+
+<div class="container">
+  <div
+    class="mt-10 flex items-end justify-between border-b border-black md:mt-20"
+  >
+    <div class="flex items-end">
+      <h2 class="pb-2 font-dis1 text-5xl font-bold">Artist</h2>
+      <h3 class="ml-4 hidden pb-2 text-[20px] font-semibold sm:block">
+        熱門藝術家
+      </h3>
+    </div>
+    <a
+      href="#"
+      class="button group relative px-12 py-2 font-dis1 text-lg hover:bg-main hover:text-white"
+    >
+      <p>more</p>
+      <div
+        class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent group-hover:border-b-black group-hover:border-r-black"
+      ></div>
+    </a>
+  </div>
+
+  <ul class="mt-12 flex items-center space-x-6">
+    <li class="md:w-3/12">
+      <a href="artist.html" class="relative hidden grow-0 md:block">
+        <img
+          src="assets/images/artist01.jpg"
+          alt=""
+          class="aspect-square object-cover grayscale hover:grayscale-0"
+        />
+      </a>
+    </li>
+    <li class="md:w-6/12">
+      <a href="#" class="group relative">
+        <div class="relative">
+          <img
+            src="assets/images/artist02.jpg"
+            alt=""
+            class="group-hover:opacity-75"
+          />
+          <div
+            class="button absolute bottom-6 right-6 z-10 block border border-black bg-white px-8 py-1 font-dis1 text-lg group-hover:bg-main group-hover:text-white"
+          >
+            <p>more</p>
+            <div
+              class="absolute right-0 bottom-0 h-0 w-0 border-8 border-t-transparent border-l-transparent border-b-black border-r-black"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="absolute left-6 top-6 font-dis1 text-3xl text-white md:text-6xl"
+        >
+          Antony<br />Wu
+        </div>
+        <div
+          class="left-6 bottom-6 mt-4 bg-white p-6 opacity-80 group-hover:opacity-70 lg:absolute lg:max-w-[307px]"
+        >
+          ​喜愛大自然，創作題材常見大山、大水、花草與樹木。
+        </div>
+      </a>
+    </li>
+    <li class="md:w-3/12">
+      <a href="" class="relative hidden md:block">
+        <img
+          src="assets/images/artist03.jpg"
+          alt=""
+          class="aspect-square object-cover grayscale hover:grayscale-0"
+        />
+      </a>
+    </li>
+  </ul>
+
+  <ul class="mt-12 flex justify-center">
+    <li class="mr-2 h-2 w-2 bg-black"></li>
+    <li class="mr-2 h-2 w-4 bg-main"></li>
+    <li class="mr-2 h-2 w-2 bg-black"></li>
+    <li class="h-2 w-2 bg-black"></li>
+  </ul>
+</div>
+
+<!-- Artwork 區塊 CSS Masonry -->
+<div class="container">
+  <div
+    class="mt-10 flex items-end justify-between border-b border-black md:mt-20"
+  >
+    <div class="flex items-end">
+      <h2 class="pb-2 font-dis1 text-5xl font-bold">Artwork</h2>
+      <h3 class="ml-4 hidden pb-2 text-[20px] font-semibold sm:block">
+        最新藝術品
+      </h3>
+    </div>
+    <a
+      href="#"
+      class="button group relative px-12 py-2 font-dis1 text-lg hover:bg-main hover:text-white"
+    >
+      <p>more</p>
+      <div
+        class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent group-hover:border-b-black group-hover:border-r-black"
+      ></div>
+    </a>
+  </div>
+
+  <ul class="mt-6 columns-2 md:mt-12 md:columns-3 lg:columns-4">
+    <li class="card1 mb-12 break-inside-avoid border-b border-black pb-4">
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art09.jpg"
+            alt=""
+            class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">區塊戀-他的私生活</h4>
+    </li>
+
+    <li
+      class="card2 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+    >
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art12.jpg"
+            alt=""
+            class="aspect-auto border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">不哭不哭眼淚是珍珠</h4>
+    </li>
+
+    <li
+      class="card3 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+    >
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art10.jpg"
+            alt=""
+            class="aspect-[3/4] border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">夏娃的醜聞</h4>
+    </li>
+
+    <li
+      class="card4 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+    >
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art03.jpg"
+            alt=""
+            class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">十分鐘就到</h4>
+    </li>
+
+    <li
+      class="card5 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+    >
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art02.jpg"
+            alt=""
+            class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">藍色啤酒海</h4>
+    </li>
+
+    <li
+      class="card6 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+    >
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art04.jpg"
+            alt=""
+            class="aspect-[3/4] border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">我這樣有美嗎</h4>
+    </li>
+
+    <li
+      class="card7 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+    >
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art11.jpg"
+            alt=""
+            class="aspect-auto border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">沒有人愛我</h4>
+    </li>
+
+    <li
+      class="card8 mb-12 aspect-auto break-inside-avoid border-b border-black pb-4"
+    >
+      <a href="#" class="group block bg-slate-900">
+        <div class="relative w-full">
+          <img
+            src="assets/images/art24.jpg"
+            alt=""
+            class="aspect-square border-8 border-white object-cover group-hover:opacity-30 lg:border-[16px]"
+          />
+          <div
+            class="absolute top-0 left-0 z-20 hidden h-full w-full p-6 group-hover:block"
+          >
+            <div
+              class="flex h-full flex-col justify-between border border-white p-4"
+            >
+              <div class="text-white">
+                <p>唯一想擁有的人，唯一不可以擁有的</p>
+                <p class="font-dis1">
+                  <i class="fa-brands fa-ethereum mr-2"></i>300
+                </p>
+              </div>
+              <div
+                class="button group relative self-end border border-black bg-white px-10 py-0.5 font-dis1 text-lg"
+              >
+                <span>more</span>
+                <div
+                  class="absolute right-0 bottom-0 h-0 w-0 border-8 border-r-main border-b-main border-t-transparent border-l-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <h4 class="mt-4 font-semibold">我真的受傷了</h4>
+    </li>
+  </ul>
+</div>
+
+<!-- Join Us 區塊 -->
+
+<div class="container mt-20 text-center">
+  <h2 class="font-dis1 text-5xl font-bold">Join Us</h2>
+  <h3 class="mt-4 text-[20px] font-semibold">創建並出售你的藝術品</h3>
+  <div class="mt-10 h-1 bg-black"></div>
+  <div class="mt-2 h-[1px] bg-black"></div>
+
+  <div class="mt-20 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
+    <div>
+      <i class="fa-solid fa-wallet text-4xl text-main"></i>
+      <h4 class="mt-4 text-xl font-semibold">設置你的錢包</h4>
+      <p class="mt-6">設置好您選擇的錢包後<br />點擊右上角的錢包圖標進行連接</p>
+    </div>
+    <div>
+      <i class="fa-solid fa-pen-ruler text-4xl text-main"></i>
+      <h4 class="mt-4 text-xl font-semibold">創建您的主頁</h4>
+      <p class="mt-6">註冊成為會員，編輯您的資料<br />讓大家了解你</p>
+    </div>
+    <div>
+      <div class="h-9">
+        <i class="fa-solid fa-heart text-main"></i>
+        <i class="fa-solid fa-music text-main"></i><br />
+        <i class="fa-solid fa-camera text-main"></i>
+        <i class="fa-solid fa-bolt text-main"></i>
+      </div>
+
+      <h4 class="mt-4 text-xl font-semibold">添加你的 NFT</h4>
+      <p class="mt-6">上傳你的作品<br />添加標題和描述</p>
+    </div>
+    <div>
+      <i class="fa-solid fa-tags text-4xl text-main"></i>
+      <h4 class="mt-4 text-xl font-semibold">設置你的錢包</h4>
+      <p class="mt-6">選擇出售 NFT 的方式<br />並設定價格，等待有緣人</p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="mt-20 h-[1px] bg-black"></div>
+    <div class="mt-2 h-1 bg-black"></div>
+
+    <footer class="container py-6 text-center">
+      © ART NFT. All Rights Reserved
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+    <!-- Masonry js -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  </body>
+</html>
